@@ -1,0 +1,30 @@
+Estados de uma tarefa:
+Novo - pronto - executando - terminado
+		  -  suspenso  -
+			  		-	(Time preemption)		-			
+New (ready to run) - ready (receives processor) - running (execution ends) - terminated
+			  - (wait ends, can continue)  - suspended - (waits for data, event, time)
+
+Estados gerenciados pelo monitor
+
+Sistemas de tempo compartilhado foi uma solução para problemas de sistema multitarefas.
+Conceito introduzido pelo CTSS (MIT, 1965)
+
+*Cada tarefa recebe uma fatia de tempo (quantum) de CPU
+*A tarefa perde a CPU ao acabar seu quantum
+*Quantum típico vai de 10 ms a 200ms
+*Implementado através de interrupções(ticks)
+
+Também tem preempção pro prioridade.
+
+Context switch: Trocar uma tarefa de estado (de pronto para executando e etc.)
+
+Pronto - aguarda para ser executado.
+Escalonamento: o SO é responsavel por determinar a ordem e os criterios pelos quais os processos em estado de pronto devem fazer uso do processador.
+
+Espera - aguarda por algum evento ou recurso ou entrada para ir pra execução.
+
+Pronto -> execução: é politica de escalonamento
+
+Execução -> Pronto: é preempção (termino da fatia de tempo)
+

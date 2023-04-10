@@ -1,0 +1,63 @@
+Exercicio 1 
+1 - Ler e assistir o video referente ao material do Maziero - capitulo 1
+
+2 - Ler o material referente ao livro do machado maia...
+
+Sistemas operacionais por Maziero: 
+
+Camada de software que opera entre o hardware e os programas aplicativos.
+Sistema operacional Abstrai os recursos, oferecendo uma interface simples e homogenea.
+Gerencia os recursos pelos programas.
+
+Areas de gerência:
+Processador - executar as tarefas
+Memoria - fornecer areas de memoria isoladas
+Dispositivosconfigurar e abstrauir dispositivos
+Arquivos - criar e manter arquivos e diretorios
+Proteção - garantir regras de acesso aos recursos
+Tipos de SO:
+Batch - executar tarefas sequenciais (transações...)
+De rede - acessa recursos em outros computadores.
+Distribuido - acessa recursos de forma transparente.
+Multiusuario - cada recuso tem um dono e regras de acesso.
+Servidor - gestão eficiente de grande volumes de recurso(quando o pc tem muita memoria, por exemplo).
+Desktop - interface graficas e suporte a interatividade.
+Movel - gestao de energia, conectividade e sensores.
+Embarcado - hardware com pouco recurso e energia.
+Tempo real - tem comportamento temporal previsivel: pode ser soft real-time ou hard real-time.
+
+Sistemas operacionais por Machado maia:
+
+Monoprogramáveis/Monotarefa - Caracterizam por permitir que o processador, a memória e os perifericos permaneçam exclusivamente dedicados à execução de uma unica tarefa (Processador ocioso, memoria subutilizada e simples implementação).
+Multiprogramaveis/Multitarefa - O SO se preocupa em gerenciar o acesso concorrente aos seus diversos recursos, como meoria, processador e perifericos, de forma ordenada e protegida, entre os diversos programas.
+Vantagens: Redução do tempo de resposta das aplicações processadas; compartilhamento dos diversos recursos e redução dos custos.
+Desvantagens: Implementação muito mais complexa que as dos sistemas monoprogramáveis.
+
+Sistemas de tempo compartilhado (time-sharing):
+Divisão(ou fatia) do tempo - time-slice.
+Devido a interação desses sistemas com os usuarios eles são conhecidos como sistemas on-line.
+Tempos baixos de respostas e menores custos.
+Cada programa/tarefa teu seu tempo pra abrir (time slice) e, caso não execute, terá problema de "time-out" e sairá da fila de execução.
+Cada tarefa tem uma prioridade quantificavel, a  tarefa na fila com mais prioridade será executada primeiro.
+
+Sistema de tempo real (real-time):
+tempos de processamento devem estar dentro de limites rigidos;
+Um programa utiliza o processador o tempo que for necessário ou até que apareça outro mais prioritário;
+
+Exemplo: controle de tráfego aéreo.
+
+Sistemas de multiplos processadores:
+Duas ou mais CPUs interligadas e trabalhando em conjunto.
+Características e vantagens específicas como escalabilidade, disponibilidade e balanceamento de carga.
+
+Características:
+Escalabilidade - capacidade de ampliar o poder omputacional do sistema adicionando novos processadores
+(Scale out e Scale up).
+Disponibilidade: Capcidade de manter o sistemas em operação mesmo em casos de falhas.
+Balanceamento de carga: é a possibilidade de distribuir o processamento entre os diversos processadores da configuração.
+Terminal burro é aquele que não uso o proprio processador.
+
+
+
+
+
